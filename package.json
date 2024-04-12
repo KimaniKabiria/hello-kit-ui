@@ -1,5 +1,5 @@
 {
-  "name": "hello-kit-ui",
+  "name": "@KimaniKabiria/hello-kit-ui",
   "version": "1.0.0",
   "description": "A React UI kit & cheatsheet",
   "type": "module",
@@ -64,5 +64,8 @@
       "npm run lint",
       "npm run test"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@KimaniKabiria"
   }
 }
