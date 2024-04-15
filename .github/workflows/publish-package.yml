@@ -1,9 +1,9 @@
-name: publish npm and github
+name: publish npm
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   publish:
@@ -16,14 +16,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 18
+          registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
         run: npm install
-
-      - name: Publish to GitHub Package Registry
-        run: npm publish --registry=https://npm.pkg.github.com/
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Publish to npm
         run: npm publish --access public
