@@ -45,7 +45,7 @@ const Button: React.FC<ButtonProps> = ({
       size={size}
       {...props}
     >
-      <p className="text-xl font-medium text-white">{text}</p>
+      <p className="text-sm font-medium text-white">{text}</p>
     </StyledButton>
   );
 };
