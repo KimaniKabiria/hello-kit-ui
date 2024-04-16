@@ -1,12 +1,6 @@
 module.exports = {
   extends: ["@commitlint/config-conventional"],
   rules: {
-    "type-enum": [
-      2,
-      "always",
-      ["Feature", "Fix", "Build", "Docs", "Revert", "Test", "Update"], // Adjust commit types as needed
-    ],
-    "type-case": [2, "always", "pascal-case"], // Enforce pascal case for type
     "scope-enum": [2, "always", ["UI", "Components", "Core", "Docs", "Tests", "Config", "Website", "Story"]],
     "scope-case": [2, "always", "pascal-case"], // Enforce pascal case for scope
     "subject-full-stop": [2, "never"], // Remove full stop at the end of subject
