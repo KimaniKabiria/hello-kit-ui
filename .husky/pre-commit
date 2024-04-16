@@ -1,14 +1,4 @@
 #!/bin/sh
-
 . "$(dirname "$0")/_/husky.sh"
 
-# # Check if there are unstaged changes
-# if [[ $(git status --porcelain | wc -l) -gt 0 ]]; then
-#   echo "You have unstaged changes. Please stage them before continuing."
-#   exit 1
-# fi
-
-# Run existing linting checks
 npx lint-staged
-
-echo "Running pre-commit checks..."
