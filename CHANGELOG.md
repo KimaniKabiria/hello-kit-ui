@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.11](https://github.com/kimani-kabiria/hello-kit-ui/compare/v1.0.10...v1.0.11) (2024-04-16)
+
+
+### Bug Fixes
+
+* **Config:** bug on pre commit version prompt ([c2b16db](https://github.com/kimani-kabiria/hello-kit-ui/commits/c2b16dbd911c97e129d8854ce06609108b01946d))
+
 ### 1.0.10 (2024-04-16)
 
 
