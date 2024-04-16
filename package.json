@@ -10,8 +10,8 @@
     "/dist"
   ],
   "scripts": {
-    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
-    "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
+    "format": "prettier --write --parser typescript '**/*.{ts,tsx,js,jsx}'",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx --ignore-path .gitignore --fix",
     "build": "tsc && vite build",
     "test": "vitest run",
     "test-watch": "vitest",
@@ -64,7 +64,7 @@
     "react": "^18.2.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "*.{ts,tsx,js,jsx}": [
       "npm run format",
       "npm run lint"
     ]
