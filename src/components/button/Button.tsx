@@ -14,11 +14,11 @@ const StyledButton = styled.button<ButtonProps>`
   line-height: 1;
   font-size: 15px;
   cursor: pointer;
-  font-weight: 700;
-  font-weight: bold;
+  // font-weight: 700;
+  // font-weight: bold;
   border-radius: 10px;
   display: inline-block;
-  color: ${(props) => (props.primary ? "#fff" : "#000")};
+  // color: ${(props) => (props.primary ? "#fff" : "#000")};
   background-color: ${(props) => (props.primary ? "#FF5655" : "#f4c4c4")};
   padding: ${(props) =>
     props.size === "small"
@@ -45,7 +45,7 @@ const Button: React.FC<ButtonProps> = ({
       size={size}
       {...props}
     >
-      {text}
+      <p className="text-xl font-medium text-white">{text}</p>
     </StyledButton>
   );
 };
